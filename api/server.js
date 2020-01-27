@@ -6,7 +6,9 @@ server.use(express.json());
 
 server.post('/', (req, res) => {
   console.log(req.body);
-  git().pull('origin','master');
+  if (req.body.pull_request.merge) {
+    git().pull('origin','master');
+  }
   res.json({ message: 'success' });
 })
 
