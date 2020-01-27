@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/nattroj/node-auto-deploy#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "simple-git": "^1.131.0"
   }
 }
