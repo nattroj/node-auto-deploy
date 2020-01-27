@@ -3,7 +3,7 @@ const server = express();
 
 server.use(express.json());
 
-server.get('/', (req, res) => {
+server.post('/', (req, res) => {
   console.log(req.body);
   res.json({ message: 'success' })
 })
